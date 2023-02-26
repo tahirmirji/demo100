@@ -8,22 +8,23 @@
 # print(a[2])
 
 
-
-List1 = []
+list1 = []
 
 n = int(input("Enter the n value: "))
 
 print("Enter the elements: ")
 for i in range(n):
-    List1.append(int(input()))
+    list1.append(int(input()))
+n=len(list1)
 
-for i in range(0,n-2):
-    for j in range(1,n):
-        if(List1[i] > List1[j]):
-            temp = List1[i]         # temp = 10
-            List1[i]=List1[j]       # 10=30
-            List1[j]=temp           # 30=temp
-            print(List1,end=" | ")
 
-            
+for i in range(n-1,0,-1):
+    for j in range(i):
+        if(list1[j] > list1[j+1]):
+            temp = list1[j]         # temp = 10
+            list1[j]=list1[j+1]       # 10=30
+            list1[j+1]=temp           # 30=temp
+    print(list1)
+print(list1)
+
 
