@@ -8,19 +8,25 @@
 # print(a[2])
 
 
-list1 = []
-n = int(input("Enter the n value: "))
-print("Enter the elements: ")
-for i in range(n):
-    list1.append(int(input()))
-n=len(list1)
-for i in range(n-1,0,-1):
-    for j in range(i):
-        if(list1[j] > list1[j+1]):
-            temp = list1[j]         # temp = 10
-            list1[j]=list1[j+1]       # 10=30
-            list1[j+1]=temp           # 30=temp
-    print(list1)
-print(list1)
+str1="Python is taking over the world"
+
+print(str1.upper())
+print(str1.replace('Python','Python Programming'))
+
+
+# values=[10,8,30,9,1,7,9]
+# # sort the numbers
+# n = len(values)
+
+# for i in range(n-1,0,-1):   #   6+(-1)
+#     # print("i:",i)
+#     for j in range(i):
+#         # print("J:",j)
+#         if values[j] > values[j+1]:
+#             values[j], values[j+1]   = values[j+1],values[j]
+#             # print("Comparing:",values[j],'>',values[j+1])
+#         print(i," ",j,":",values)
+
+
 
 
